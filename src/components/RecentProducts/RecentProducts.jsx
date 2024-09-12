@@ -80,8 +80,8 @@ let response = await addProductTowishlist(id)
       newWishlist.add(id)
       
   toast.success(response?.data?.message)
-    // localStorage.setItem('isInWishlist', response.data.data )
-    // setIsInWishlist(prev=> new Set(prev).add(id) );
+  // localStorage.setItem('isInWishlist', response.data.data )    
+  // setIsInWishlist(prev=> new Set(prev).add(id) );   
       localStorage.setItem("isInWishlist", JSON.stringify(response.data.data));
 
 }

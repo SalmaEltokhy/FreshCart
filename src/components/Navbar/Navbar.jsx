@@ -86,9 +86,7 @@ useEffect(()=>{
                   </div>}
           </i>
 
-            {/* <NavLink to="wishlist" className='relative px-1 md:px-0'> 
-            <li className='fa-solid fa-heart fa-xl text-red-700 '></li>
-            </NavLink> */}
+           
           </>  :null}
           <div className="links md:flex gap-4 py-2">
 

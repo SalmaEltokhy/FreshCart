@@ -15,7 +15,6 @@ const [Cart, setCart] = useState(null)
 
  async function getCartItem(){
   let response=  await getLoggedUserCart()
-  console.log(response.data)
   setCart(response?.data)
   if(response?.data?.status=="success"){
     setCartDetails(response?.data?.data)
