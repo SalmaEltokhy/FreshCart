@@ -72,7 +72,7 @@ if(load){
       </tr>
     </thead>
     <tbody className='w-full'>
-         {order.cartItems.map((item)=><>
+  {order.cartItems.map((item)=><>
 <tr key={item?._id}  className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 w-flex items-center ">
 <td className="p-4">
   <img src={item.product.imageCover} className="w-16 md:w-32 max-w-full max-h-full" alt="Apple Watch" />

@@ -19,7 +19,7 @@ const [isLoading,setisLoading]=useState(false)
 
    function handleLogin(values){
     setisLoading(true)
-   axios.post(`https://ecommerce.routemisr.com/api/v1/auth/signup`,values)
+   axios.post(`https://ecommerce.routemisr.com/api/v1/auth/signin`,values)
     .then((res)=>{
       setisLoading(false)
       if(res.data.message=='success'){
@@ -91,7 +91,7 @@ let validationSchema= Yup.object().shape({
   
   <div className='text-left'>
   <button type="submit" className="text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg w-full sm:w-auto px-5 py-2.5 text-center dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800"> 
-    {isLoading?<i className='fas fa-spinner fa-spin'></i>:'Register'} </button>
+    {isLoading?<i className='fas fa-spinner fa-spin'></i>:'Login'} </button>
   </div>
   <Link to={"/register"}> <p className='text-black pl-4 pt-4'>don't you have an account?<span className='underline pl-4 hover:text-emerald-600'>Register Now</span> </p></Link>
 

@@ -39,6 +39,7 @@ useEffect(()=>{
   getCart()
   getWishlist()
 },[])
+
   return <>
 
 <nav className="border-gray-200 fixed top-0 right-0 left-0 bg-slate-200 z-50">
@@ -93,8 +94,8 @@ useEffect(()=>{
          
             {userLogin!=null? <span className="text-sm cursor-pointer" onClick={signout}> <i className="fa-solid fa-right-to-bracket fa-xl text-emerald-600"></i> SignOut</span>:
             <>
-              <NavLink to="login" className="text-sm">Login</NavLink>
-              <NavLink to="register" className="text-sm">Register</NavLink>
+            <p><NavLink to="login" className="text-sm">Login</NavLink></p>  
+            <p><NavLink to="register" className="text-sm">Register</NavLink></p>  
             </>
             }
         
